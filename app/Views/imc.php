@@ -13,14 +13,16 @@
         Cálculo do IMC <br>(Índice de Massa Corporal):
     </h1>   
     <div class="d-flex justify-content-center">
-    <form class="col-6" action="/resultado.php" method="POST">
+    <form class="col-6" action="#" method="POST">
         <div class="mb-3 mt-3">
             <label for="peso" class="form-label">Peso:</label>
             <input type="text" class="form-control" id="peso" name="peso" placeholder="Entre com o peso.">
+            <p class="text-danger"><?= $msg[0]; ?></p>
         </div>
         <div class="mb-3">
             <label for="altura" class="form-label">Altura:</label>
             <input type="text" class="form-control" id="altura" name="altura" placeholder="Entre com a altura.">
+            <p class="text-danger"><?= $msg[1]; ?></p>
         </div>
         <button type="submit" id="calcular" class="btn btn-primary">Calcular IMC</button>
         <button type="reset" id="limpar" class="btn btn-danger">Limpar</button>

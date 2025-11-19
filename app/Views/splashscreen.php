@@ -1,8 +1,8 @@
 <?php
 // splash.php
 // Define o tempo para redirecionar (5 segundos)
-//header("refresh:5;url=pagina_destino.php");
-//header("refresh:5;url=imc.php");
+//header("refresh:5;url=pagina_destino.php");   
+// header("refresh:3;url=#");
 ?>
 
 <!DOCTYPE html>
@@ -52,24 +52,25 @@
 
     <header class="d-flex justify-content-between align-items-center header border-bottom">
         <div>
-            <img src="logo-esquerda.png" alt="Logo Esquerda (Fatec Jahu)" height="60" />
+            <img src="./../public/assets/img/logotipos_FatecJahu_CPS_DSM 2025-2/logotipos/FatecJahu_2025-2.png" alt="Logo Esquerda (Fatec Jahu)" height="60" />
         </div>
         <div class="mx-auto">
-            <img src="logo-centro.png" alt="Logo Centro (CPS)" height="60" />
+            <img src="./../public/assets/img/logotipos_FatecJahu_CPS_DSM 2025-2/logotipos//centro-paula-souza-logo.svg" alt="Logo Centro (CPS)" height="60" />
         </div>
         <div>
-            <img src="logo-direita.png" alt="Logo Direita (DSM)" height="60" />
+            <img src="./../public/assets/img/logotipos_FatecJahu_CPS_DSM 2025-2/logotipos/FatecJahu-CST-DSM.png" alt="Logo Direita (DSM)" height="60" />
         </div>
     </header>
 
     <main class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
-        <h1 class="fw-bold mb-4">Nome do Aplicativo</h1>
+        <h1 class="fw-bold mb-4">IMC feito em PHP e MVC</h1>
         <br>        
         <i class="fas fa-spinner fa-spin spinner"></i>
         <br>
         <h3 class="fw-bold mb-4 text-center">Curso Superior de Tecnologia em<br>Desenvolvimento de Software Multiplataforma</h3>
+        <a class="btn btn-primary" href="index.php?controle=ImcController&metodo=calcularImc">Iniciar</a>
         <br>
-        <p class="text-center"><strong>Nome do Aluno</strong></p>
+        <p class="text-center"><strong>Nome do Aluno: Lucas Gabriel de Paula Pinto</strong></p>
         <br>
         <p class="text-center">Professor: Alex Paulo Lopes Batista<br>
            Disciplina: Desenvolvimento Web II (DW2).
